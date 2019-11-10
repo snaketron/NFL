@@ -17,9 +17,9 @@ nfl$Year <- as.numeric(x[, 1])
 nfl$Month <- as.numeric(x[, 2])
 nfl$Day <- as.numeric(x[, 3])
 rm(x)
-nfl <- nfl[nfl$Year == 2018, ]
-nfl <- nfl[-which(nfl$Year == 2018 & nfl$Month == 1), ]
-nfl <- nfl[-which(nfl$Year == 2018 & nfl$Month == 2), ]
+nfl <- nfl[nfl$Year == 2016, ]
+nfl <- nfl[-which(nfl$Year == 2016 & nfl$Month == 1), ]
+nfl <- nfl[-which(nfl$Year == 2016 & nfl$Month == 2), ]
 nfl <- nfl[nfl$Playoff.Game. == "", ]
 
 
